@@ -88,12 +88,10 @@ public class ProductAction extends ActionSupport {
 	@Transactional(propagation = Propagation.REQUIRED)
 	public String save() throws Exception {
 		this.productDao.saveOrUpdate(this.product);
-
 		if (this.file != null) {
 			String id = (String) this.photoDao
 					.findByCriteria(new CriteriaCallBack() {
 
-						@Override
 						public void setCriteria(Criteria criteria) {
 							criteria.add(Restrictions.eq("product", product))
 									.setProjection(Projections.id());
@@ -103,18 +101,24 @@ public class ProductAction extends ActionSupport {
 			if (this.photo == null) {
 				this.photo = new Photo();
 			}
-
+			InputStream inputStream = null;
+			if (file==null||!file.exists()) {
+				String path = Thread
+						.currentThread()
+						.getContextClassLoader()
+						.getResource(
+								"com/googlecode/simplelife/product/business/empty_photo.GIF")
+						.getPath();
+				file = new File(path.substring(1));
+			}
+			inputStream = new FileInputStream(file);
 			this.photo.setData(new byte[(int) this.file.length()]);
 			this.photo.setProduct(product);
 			this.photo.setId(id);
-
-			FileInputStream inputStream = new FileInputStream(file);
 			inputStream.read(this.photo.getData());
 			inputStream.close();
-
 			this.photoDao.saveOrUpdate(this.photo);
 		}
-
 		return "success";
 	}
 
