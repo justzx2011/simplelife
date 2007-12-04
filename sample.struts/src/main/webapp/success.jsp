@@ -5,8 +5,8 @@
 	$Rev$
 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-   
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -19,6 +19,6 @@
 <p>品名: ${product.name }</p>
 <p>价格: ${product.price }</p>
 <p>厂商: ${product.vendor }</p>
-
+<p>创建日期: <fmt:formatDate pattern="yyyy年M月d日" value="${product.createDate}"/></p>
 </body>
 </html>

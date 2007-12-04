@@ -18,6 +18,7 @@
 <p><label>名称<input name="product.name" type="text" /></label></p>
 <p><label>价格<input name="product.price" type="text" /></label></p>
 <p><label>厂商<input name="product.vendor" type="text" /></label></p>
+<p><label>创建日期: <input name="product.createDate" type="text" /></label></p>
 <hr />
 <p><input type="submit" value="保存" /></p>
 </fieldset>

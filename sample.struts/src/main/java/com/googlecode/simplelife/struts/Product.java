@@ -17,6 +17,7 @@ package com.googlecode.simplelife.struts;
 
 import java.io.Serializable;
 import java.text.MessageFormat;
+import java.util.Date;
 
 /**
  * 
@@ -44,6 +45,16 @@ public class Product implements Serializable {
 	// 供货商
 	private String vendor;
 	
+	private Date createDate;
+	
+	public Date getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -79,7 +90,7 @@ public class Product implements Serializable {
 	@Override
 	public String toString() {
 	        return MessageFormat.format(
-	                        "[ID:{0}, name:{1}, price:{2}, vendor:{3}]", this.id,
-	                        this.name, this.price, this.vendor);
+	                        "[ID:{0}, name:{1}, price:{2}, vendor:{3}, createDate:{4}]", this.id,
+	                        this.name, this.price, this.vendor,this.createDate);
 	}
 }
