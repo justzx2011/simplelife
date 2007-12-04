@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	$LastChangedBy: Marshal.Wu@gmail.com $
+	$LastChangedDate: 2007-12-04 13:03:00 +0800 (星期二, 04 十二月 2007) $
+	$Rev: 91 $
+-->
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="product.name">
+		<field-validator type="requiredstring">
+			<message>必须输入品名.</message>
+		</field-validator>
+	</field>
+</validators>

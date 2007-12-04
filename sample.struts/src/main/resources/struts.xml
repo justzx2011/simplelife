@@ -16,7 +16,11 @@
 	<package name="" extends="struts-default">
 		<action name="save"
 			class="com.googlecode.simplelife.struts.ProductAction">
-			<result>success.jsp</result>
+			<result name="success">success.jsp</result>
+			<result name="input">form.jsp</result>
+		</action>
+		<action name="input">
+			<result>form.jsp</result>
 		</action>
 	</package>
 </struts>

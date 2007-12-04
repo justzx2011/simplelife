@@ -15,6 +15,8 @@
  */
 package com.googlecode.simplelife.struts;
 
+import com.opensymphony.xwork2.ActionSupport;
+
 /**
  * 
  * @author Marshal Wu
@@ -23,7 +25,12 @@ package com.googlecode.simplelife.struts;
  * $LastChangedDate$<br />
  * $Revision$<br />
  */
-public class ProductAction {
+public class ProductAction extends ActionSupport{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private Product product;
 
 	public Product getProduct() {
