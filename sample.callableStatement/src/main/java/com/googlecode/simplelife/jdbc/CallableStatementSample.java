@@ -75,6 +75,7 @@ public class CallableStatementSample {
 		Connection connection;
 		connection = DriverManager.getConnection(
 				"jdbc:oracle:thin:@localhost:1521:XE", "marshal", "password");
+		connection.setAutoCommit(false);
 		return connection;
 	}
 }
