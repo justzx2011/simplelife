@@ -21,7 +21,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * 演示通过JDBC调用Oracle存储过程.
+ * 演示通过JDBC调用Oracle存储过程。
  * 
  * @author Marshal Wu
  * 
