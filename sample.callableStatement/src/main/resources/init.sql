@@ -1,3 +1,5 @@
+-- $Id$
+
 drop table USERS cascade constraints;
 
 create table USERS  (
