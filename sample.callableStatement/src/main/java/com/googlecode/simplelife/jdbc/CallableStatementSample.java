@@ -65,6 +65,11 @@ public class CallableStatementSample {
 
 	}
 
+	/**
+	 * 得到连接
+	 * @return
+	 * @throws SQLException
+	 */
 	private Connection getConnection() throws SQLException {
 		Connection connection;
 		connection = DriverManager.getConnection(
