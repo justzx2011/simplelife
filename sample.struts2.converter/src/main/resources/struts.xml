@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	$LastChangedBy: Marshal.Wu@gmail.com $
+	$LastChangedDate$
+	$Rev$
+-->
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
+	<constant name="struts.devMode" value="false" />
+
+	<package name="" extends="struts-default"></package>
+
+	<include file="com/googlecode/simplelife/struts/simpleform/struts.xml" />
+	<include file="com/googlecode/simplelife/struts/bean/struts.xml" />
+	<include file="com/googlecode/simplelife/struts/complex/struts.xml" />
+	<include file="com/googlecode/simplelife/struts/converter/struts.xml" />
+</struts>

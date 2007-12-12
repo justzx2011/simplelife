@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	$LastChangedBy: Marshal.Wu@gmail.com $
+	$LastChangedDate$
+	$Rev$
+-->
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="bean" extends="struts-default">
+		<action name="save"
+			class="com.googlecode.simplelife.struts.bean.ProductAction">
+			<result name="success">/WEB-INF/bean/success.jsp</result>
+			<result name="input">/WEB-INF/bean/form.jsp</result>
+		</action>
+		<action name="form">
+			<result>/WEB-INF/bean/form.jsp</result>
+		</action>
+	</package>
+</struts>
