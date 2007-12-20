@@ -15,6 +15,7 @@
 <s:head />
 </head>
 <body>
+<h1>演示简单的bean转换</h1>
 <s:form method="POST" id="product_form" action="save.action" >
         <s:textfield name="product.name" label="名称" />
         <s:textfield name="product.price" label="价格" />

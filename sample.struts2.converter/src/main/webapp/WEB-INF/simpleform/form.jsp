@@ -15,6 +15,7 @@
 <s:head />
 </head>
 <body>
+<h1>演示简单的属性转换</h1>
 <s:form method="POST" id="product_form" action="save.action" >
         <s:textfield name="name" label="名称" />
         <s:textfield name="price" label="价格" />
