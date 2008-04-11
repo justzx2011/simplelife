@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+    "http://getahead.org/dwr/dwr20.dtd">
+<dwr>
+	<allow>
+		<create javascript="helloworld" creator="new">
+			<param name="class" value="com.easymorse.dwr2demo.helloworld.HelloWorld" />
+		</create>
+		<create javascript="chatService" creator="new" scope="application">
+			<param name="class" value="com.easymorse.dwr2demo.chat.ChatService" />
+		</create>
+		 <convert converter="bean" match="com.easymorse.dwr2demo.chat.Message"/>
+	</allow>
+</dwr>
