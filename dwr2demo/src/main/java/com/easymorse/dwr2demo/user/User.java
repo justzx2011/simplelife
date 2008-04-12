@@ -1,6 +1,7 @@
 package com.easymorse.dwr2demo.user;
 
 import java.io.Serializable;
+import java.text.MessageFormat;
 
 public class User implements Serializable {
 
@@ -38,5 +39,12 @@ public class User implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	@Override
+	public String toString() {
+		return MessageFormat.format("[name: {0}]", this.name);
+	}
+	
+	
 
 }

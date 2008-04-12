@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>演示远程表单和AJAX校验</title>
+<script src='../dwr/util.js'></script>
+<script src='../dwr/engine.js'></script>
+<script src='../dwr/interface/userService.js'> </script>
+<script src='user.js'></script>
+</head>
+<body>
+
+<h1>演示远程表单和AJAX校验</h1>
+<div id="content">
+<form id="userForm">
+<p><label for="name">用户名：</label><input id="name" name="name"
+	type="text" /></p>
+<p><label for="email">邮箱：</label><input id="email" name="email"
+	type="text" /></p>
+<p><input type="button" id="submit" value="提交" /></p>
+<p><input type="hidden" id="id" name="id" /></p>
+<script type="text/javascript">
+new User();
+</script>
+</form>
+</div>
+</body>
+</html>

@@ -10,6 +10,10 @@
 		<create javascript="chatService" creator="new" scope="application">
 			<param name="class" value="com.easymorse.dwr2demo.chat.ChatService" />
 		</create>
+		<create javascript="userService" creator="new">
+			<param name="class" value="com.easymorse.dwr2demo.user.UserService"/>
+		</create>
 		 <convert converter="bean" match="com.easymorse.dwr2demo.chat.Message"/>
+		 <convert converter="bean" match="com.easymorse.dwr2demo.user.User"/>
 	</allow>
 </dwr>

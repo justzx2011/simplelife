@@ -19,5 +19,6 @@
 	type="button" value="Send" onclick="sendMessage()" /></p>
 <hr />
 <div id="chatlog"></div>
+<script type="text/javascript"></script>
 </body>
 </html>
